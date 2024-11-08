@@ -1,0 +1,23 @@
+[2024-11-02T23:01:44.546+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-02T23:01:44.590+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_backup.perform_backup scheduled__2024-10-01T00:00:00+00:00 [queued]>
+[2024-11-02T23:01:44.625+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_backup.perform_backup scheduled__2024-10-01T00:00:00+00:00 [queued]>
+[2024-11-02T23:01:44.627+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-02T23:01:44.681+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): perform_backup> on 2024-10-01 00:00:00+00:00
+[2024-11-02T23:01:44.720+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=519) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-02T23:01:44.725+0000] {standard_task_runner.py:72} INFO - Started process 521 to run task
+[2024-11-02T23:01:44.732+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_backup', 'perform_backup', 'scheduled__2024-10-01T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/backup_dag.py', '--cfg-path', '/tmp/tmpx5mnt4et']
+[2024-11-02T23:01:44.737+0000] {standard_task_runner.py:105} INFO - Job 46: Subtask perform_backup
+[2024-11-02T23:01:44.982+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_backup.perform_backup scheduled__2024-10-01T00:00:00+00:00 [running]> on host 713744f3b6c0
+[2024-11-02T23:01:45.666+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_backup' AIRFLOW_CTX_TASK_ID='perform_backup' AIRFLOW_CTX_EXECUTION_DATE='2024-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-01T00:00:00+00:00'
+[2024-11-02T23:01:45.671+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-02T23:01:53.167+0000] {backup_dag.py:51} INFO - Récupération des transactions frauduleuses...
+[2024-11-02T23:01:54.392+0000] {backup_dag.py:54} INFO - Récupération des transactions normales...
+[2024-11-02T23:01:56.170+0000] {backup_dag.py:63} WARNING - Pas de données à sauvegarder pour les 30 derniers jours
+[2024-11-02T23:01:56.171+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-02T23:01:56.189+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-02T23:01:56.189+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_backup, task_id=perform_backup, run_id=scheduled__2024-10-01T00:00:00+00:00, execution_date=20241001T000000, start_date=20241102T230144, end_date=20241102T230156
+[2024-11-02T23:01:56.251+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-02T23:01:56.272+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-02T23:01:56.275+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

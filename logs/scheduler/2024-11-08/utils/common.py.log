@@ -1,0 +1,73 @@
+[2024-11-08T17:53:50.964+0000] {processor.py:186} INFO - Started process (PID=653) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:53:50.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:53:50.970+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:53:50.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:53:51.014+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:53:51.071+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:53:51.070+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:53:51.178+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:53:51.177+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:53:51.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.289 seconds
+[2024-11-08T17:54:21.796+0000] {processor.py:186} INFO - Started process (PID=665) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:21.803+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:54:21.807+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:21.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:21.848+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:21.880+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:21.880+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:54:21.936+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:21.936+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:54:21.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.220 seconds
+[2024-11-08T17:54:52.363+0000] {processor.py:186} INFO - Started process (PID=677) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:52.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:54:52.374+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:52.373+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:52.418+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:54:52.779+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:52.778+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:54:52.852+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:54:52.852+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:54:52.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.592 seconds
+[2024-11-08T17:55:23.161+0000] {processor.py:186} INFO - Started process (PID=689) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:23.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:55:23.171+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:23.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:23.194+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:23.270+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:23.269+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:55:23.320+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:23.319+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:55:23.376+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.226 seconds
+[2024-11-08T17:55:53.733+0000] {processor.py:186} INFO - Started process (PID=700) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:53.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:55:53.745+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:53.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:53.764+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:55:53.794+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:53.794+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:55:53.846+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:55:53.846+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:55:53.889+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.164 seconds
+[2024-11-08T17:56:24.094+0000] {processor.py:186} INFO - Started process (PID=712) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:24.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:56:24.099+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:24.098+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:24.127+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:24.168+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:24.167+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:56:24.234+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:24.233+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:56:24.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.215 seconds
+[2024-11-08T17:56:54.446+0000] {processor.py:186} INFO - Started process (PID=723) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:54.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:56:54.453+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:54.453+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:54.500+0000] {processor.py:925} INFO - DAG(s) 'fraud_monitoring' retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:54.565+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:54.564+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-08T17:56:54.684+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:54.683+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_monitoring to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-08T17:56:54.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.349 seconds
+[2024-11-08T17:56:58.058+0000] {processor.py:186} INFO - Started process (PID=724) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:58.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:56:58.065+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:58.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:58.072+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:56:58.071+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/utils/common.py assumed to contain no DAGs. Skipping.
+[2024-11-08T17:56:58.072+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:56:58.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.099 seconds
+[2024-11-08T17:57:28.252+0000] {processor.py:186} INFO - Started process (PID=736) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:28.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:57:28.267+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:57:28.265+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:28.271+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:57:28.270+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/utils/common.py assumed to contain no DAGs. Skipping.
+[2024-11-08T17:57:28.281+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:28.340+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.103 seconds
+[2024-11-08T17:57:58.598+0000] {processor.py:186} INFO - Started process (PID=749) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:58.607+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:57:58.613+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:57:58.611+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:58.617+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:57:58.616+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/utils/common.py assumed to contain no DAGs. Skipping.
+[2024-11-08T17:57:58.618+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:57:58.678+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.098 seconds
+[2024-11-08T17:58:29.052+0000] {processor.py:186} INFO - Started process (PID=764) to work on /opt/airflow/dags/utils/common.py
+[2024-11-08T17:58:29.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/common.py for tasks to queue
+[2024-11-08T17:58:29.057+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:58:29.056+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:58:29.063+0000] {logging_mixin.py:190} INFO - [2024-11-08T17:58:29.062+0000] {dagbag.py:366} INFO - File /opt/airflow/dags/utils/common.py assumed to contain no DAGs. Skipping.
+[2024-11-08T17:58:29.063+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/common.py
+[2024-11-08T17:58:29.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/common.py took 0.132 seconds

@@ -1,0 +1,39 @@
+[2024-11-08T18:34:05.057+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-08T18:34:05.093+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:32:00+00:00 [queued]>
+[2024-11-08T18:34:05.112+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:32:00+00:00 [queued]>
+[2024-11-08T18:34:05.113+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-08T18:34:05.150+0000] {taskinstance.py:2888} INFO - Executing <Task(BranchPythonOperator): process_transaction> on 2024-11-08 18:32:00+00:00
+[2024-11-08T18:34:05.168+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1611) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-08T18:34:05.171+0000] {standard_task_runner.py:72} INFO - Started process 1614 to run task
+[2024-11-08T18:34:05.172+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'process_transaction', 'scheduled__2024-11-08T18:32:00+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmp9g_f3rv1']
+[2024-11-08T18:34:05.178+0000] {standard_task_runner.py:105} INFO - Job 300: Subtask process_transaction
+[2024-11-08T18:34:05.288+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:32:00+00:00 [running]> on host 641085defe8e
+[2024-11-08T18:34:05.473+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='process_transaction' AIRFLOW_CTX_EXECUTION_DATE='2024-11-08T18:32:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-08T18:32:00+00:00'
+[2024-11-08T18:34:05.477+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-08T18:34:05.497+0000] {baseoperator.py:405} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-11-08T18:34:05.521+0000] {fraud_detection_dag.py:77} INFO - Données récupérées depuis XCom: {"columns":["cc_num","merchant","category","amt","first","last","gender","street","city","state","zip","lat","long","city_pop","job","dob","trans_num","merch_lat","merch_long","is_fraud","current_time"],"index":[13941],"data":[[4048508450704760,"fraud_Kutch LLC","gas_transport",39.85,"Cheryl","Melton","F","5053 Bell Crescent Apt. 255","Fullerton","NE",68638,41.366,-98.0054,1749,"Surveyor, mining","1973-05-07","1efe6b320e2e6b66c26c50ae8bff8806",42.170257,-97.571574,0,1731090842204]]}
+[2024-11-08T18:34:05.522+0000] {fraud_detection_dag.py:85} INFO - Données JSON parsées avec succès
+[2024-11-08T18:34:05.526+0000] {fraud_detection_dag.py:89} INFO - DataFrame créé avec 1 lignes
+[2024-11-08T18:34:05.528+0000] {fraud_detection_dag.py:93} INFO - Colonnes renommées avec succès
+[2024-11-08T18:34:05.529+0000] {fraud_detection_dag.py:94} INFO - Colonnes disponibles: ['cc_num', 'merchant', 'category', 'amt', 'first', 'last', 'gender', 'street', 'city', 'state', 'zip', 'lat', 'long', 'city_pop', 'job', 'dob', 'trans_num', 'merch_lat', 'merch_long', 'is_fraud', 'trans_date_trans_time']
+[2024-11-08T18:34:05.531+0000] {fraud_detection_dag.py:98} INFO - Conversion de trans_date_trans_time en unix_time réussie
+[2024-11-08T18:34:05.613+0000] {fraud_detection_dag.py:107} INFO - Transformation des données...
+[2024-11-08T18:34:06.768+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/sklearn/ensemble/_base.py:172: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+  n_jobs = min(effective_n_jobs(n_jobs), n_estimators)
+
+[2024-11-08T18:34:06.790+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/sklearn/ensemble/_base.py:172: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+  n_jobs = min(effective_n_jobs(n_jobs), n_estimators)
+
+[2024-11-08T18:34:06.799+0000] {fraud_detection_dag.py:119} INFO - Prediction de fraude: NORMAL, Probabilité: 37.73%
+[2024-11-08T18:34:06.890+0000] {fraud_detection_dag.py:125} INFO - Prédiction: NORMAL (Probabilité: 37.73%)
+[2024-11-08T18:34:06.892+0000] {python.py:240} INFO - Done. Returned value was: notify_normal
+[2024-11-08T18:34:06.894+0000] {branch.py:38} INFO - Branch into notify_normal
+[2024-11-08T18:34:06.896+0000] {skipmixin.py:230} INFO - Following branch ('notify_normal',)
+[2024-11-08T18:34:06.945+0000] {skipmixin.py:278} INFO - Skipping tasks [('skip_processing', -1), ('notify_fraud', -1)]
+[2024-11-08T18:34:07.072+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-08T18:34:07.074+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=process_transaction, run_id=scheduled__2024-11-08T18:32:00+00:00, execution_date=20241108T183200, start_date=20241108T183405, end_date=20241108T183407
+[2024-11-08T18:34:07.150+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-08T18:34:07.233+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-08T18:34:07.252+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,27 @@
+[2024-11-02T22:44:40.704+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-02T22:44:40.889+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_monitoring.test_s3_connection scheduled__2024-11-01T00:00:00+00:00 [queued]>
+[2024-11-02T22:44:41.007+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_monitoring.test_s3_connection scheduled__2024-11-01T00:00:00+00:00 [queued]>
+[2024-11-02T22:44:41.008+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-02T22:44:41.123+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): test_s3_connection> on 2024-11-01 00:00:00+00:00
+[2024-11-02T22:44:41.171+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=128) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-02T22:44:41.223+0000] {standard_task_runner.py:72} INFO - Started process 134 to run task
+[2024-11-02T22:44:41.233+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_monitoring', 'test_s3_connection', 'scheduled__2024-11-01T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/monitoring_dag.py', '--cfg-path', '/tmp/tmpt8ls69nn']
+[2024-11-02T22:44:41.270+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask test_s3_connection
+[2024-11-02T22:44:41.612+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_monitoring.test_s3_connection scheduled__2024-11-01T00:00:00+00:00 [running]> on host 713744f3b6c0
+[2024-11-02T22:44:42.226+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_monitoring' AIRFLOW_CTX_TASK_ID='test_s3_connection' AIRFLOW_CTX_EXECUTION_DATE='2024-11-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-01T00:00:00+00:00'
+[2024-11-02T22:44:42.235+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-02T22:44:44.792+0000] {monitoring_dag.py:77} INFO - Buckets disponibles:
+[2024-11-02T22:44:44.793+0000] {monitoring_dag.py:79} INFO - - final-project-jedha-team-anne
+[2024-11-02T22:44:44.795+0000] {monitoring_dag.py:79} INFO - - fraud-detection-bucket-jedha
+[2024-11-02T22:44:44.798+0000] {monitoring_dag.py:82} INFO - 
+Test du bucket cible: fraud-detection-bucket-jedha
+[2024-11-02T22:44:48.911+0000] {monitoring_dag.py:86} INFO - Test du préfixe: fraud-detection-bucket
+[2024-11-02T22:44:49.463+0000] {monitoring_dag.py:98} INFO - Préfixe vide ou inexistant
+[2024-11-02T22:44:49.466+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-02T22:44:49.516+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-02T22:44:49.517+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_monitoring, task_id=test_s3_connection, run_id=scheduled__2024-11-01T00:00:00+00:00, execution_date=20241101T000000, start_date=20241102T224440, end_date=20241102T224449
+[2024-11-02T22:44:49.614+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-02T22:44:49.687+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-02T22:44:49.690+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

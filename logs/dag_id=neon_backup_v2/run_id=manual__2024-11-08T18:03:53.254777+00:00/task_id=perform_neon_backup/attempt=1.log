@@ -1,0 +1,26 @@
+[2024-11-08T18:03:58.987+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-08T18:03:59.108+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: neon_backup_v2.perform_neon_backup manual__2024-11-08T18:03:53.254777+00:00 [queued]>
+[2024-11-08T18:03:59.163+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: neon_backup_v2.perform_neon_backup manual__2024-11-08T18:03:53.254777+00:00 [queued]>
+[2024-11-08T18:03:59.164+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-08T18:03:59.225+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): perform_neon_backup> on 2024-11-08 18:03:53.254777+00:00
+[2024-11-08T18:03:59.237+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=545) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-08T18:03:59.252+0000] {standard_task_runner.py:72} INFO - Started process 549 to run task
+[2024-11-08T18:03:59.245+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'neon_backup_v2', 'perform_neon_backup', 'manual__2024-11-08T18:03:53.254777+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/backup_dag.py', '--cfg-path', '/tmp/tmps36n5yh6']
+[2024-11-08T18:03:59.257+0000] {standard_task_runner.py:105} INFO - Job 163: Subtask perform_neon_backup
+[2024-11-08T18:03:59.550+0000] {task_command.py:467} INFO - Running <TaskInstance: neon_backup_v2.perform_neon_backup manual__2024-11-08T18:03:53.254777+00:00 [running]> on host 641085defe8e
+[2024-11-08T18:03:59.797+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='neon_backup_v2' AIRFLOW_CTX_TASK_ID='perform_neon_backup' AIRFLOW_CTX_EXECUTION_DATE='2024-11-08T18:03:53.254777+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-08T18:03:53.254777+00:00'
+[2024-11-08T18:03:59.799+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-08T18:03:59.819+0000] {backup_dag.py:12} INFO - Démarrage du backup Neon...
+[2024-11-08T18:04:05.100+0000] {backup_dag.py:31} INFO - Nombre de lignes dans fraud_transactions: 0
+[2024-11-08T18:04:05.691+0000] {backup_dag.py:31} INFO - Nombre de lignes dans normal_transactions: 0
+[2024-11-08T18:04:06.302+0000] {backup_dag.py:56} INFO - Table fraud_transactions est vide, pas de backup nécessaire
+[2024-11-08T18:04:06.303+0000] {backup_dag.py:56} INFO - Table normal_transactions est vide, pas de backup nécessaire
+[2024-11-08T18:04:06.303+0000] {backup_dag.py:59} WARNING - Aucun fichier de backup créé - toutes les tables sont vides
+[2024-11-08T18:04:06.304+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-08T18:04:06.353+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-08T18:04:06.354+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=neon_backup_v2, task_id=perform_neon_backup, run_id=manual__2024-11-08T18:03:53.254777+00:00, execution_date=20241108T180353, start_date=20241108T180359, end_date=20241108T180406
+[2024-11-08T18:04:06.494+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-08T18:04:06.522+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-08T18:04:06.550+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

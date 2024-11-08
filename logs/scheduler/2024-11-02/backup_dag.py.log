@@ -1,0 +1,1009 @@
+[2024-11-02T22:32:28.452+0000] {processor.py:186} INFO - Started process (PID=53) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:32:28.454+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:32:28.461+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:28.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:32:29.945+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:32:30.297+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.295+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:fraud_backup
+[2024-11-02T22:32:30.330+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.329+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:fraud_backup
+[2024-11-02T22:32:30.359+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.359+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:fraud_backup
+[2024-11-02T22:32:30.392+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.391+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:fraud_backup
+[2024-11-02T22:32:30.431+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.430+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:fraud_backup
+[2024-11-02T22:32:30.458+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.458+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:fraud_backup
+[2024-11-02T22:32:30.482+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.482+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:fraud_backup
+[2024-11-02T22:32:30.484+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.483+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:32:30.525+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.524+0000] {dag.py:3262} INFO - Creating ORM DAG for fraud_backup
+[2024-11-02T22:32:30.557+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:32:30.556+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:32:30.612+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.172 seconds
+[2024-11-02T22:33:00.991+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:00.996+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:33:01.003+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:01.002+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:02.043+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:02.076+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:02.076+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:33:02.103+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:02.103+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:33:02.142+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.167 seconds
+[2024-11-02T22:33:33.608+0000] {processor.py:186} INFO - Started process (PID=84) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:33.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:33:33.617+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:33.616+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:35.045+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:33:35.131+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:35.131+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:33:35.184+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:33:35.184+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:33:35.231+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.641 seconds
+[2024-11-02T22:34:05.341+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:05.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:34:05.356+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:05.347+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:06.539+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:06.574+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:06.574+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:34:06.610+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:06.609+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:34:06.656+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.330 seconds
+[2024-11-02T22:34:37.440+0000] {processor.py:186} INFO - Started process (PID=108) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:37.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:34:37.457+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:37.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:38.246+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:34:38.282+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:38.282+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:34:38.312+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:34:38.311+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:34:38.343+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.921 seconds
+[2024-11-02T22:35:10.753+0000] {processor.py:186} INFO - Started process (PID=120) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:10.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:35:10.773+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:10.772+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:11.959+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:11.996+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:11.995+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:35:12.044+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:12.044+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:35:12.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.898 seconds
+[2024-11-02T22:35:44.803+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:44.808+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:35:44.816+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:44.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:46.071+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:35:46.177+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:46.176+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:35:46.299+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:35:46.294+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:35:46.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.669 seconds
+[2024-11-02T22:36:16.867+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:16.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:36:16.876+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:16.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:17.564+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:17.606+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:17.606+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:36:17.646+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:17.646+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:36:17.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.837 seconds
+[2024-11-02T22:36:48.339+0000] {processor.py:186} INFO - Started process (PID=155) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:48.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:36:48.352+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:48.352+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:48.981+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:36:49.143+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:49.139+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:36:49.217+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:36:49.216+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:36:49.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.957 seconds
+[2024-11-02T22:37:20.276+0000] {processor.py:186} INFO - Started process (PID=167) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:37:20.279+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:37:20.290+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:37:20.289+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:37:21.049+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:37:21.118+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:37:21.117+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:37:21.218+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:37:21.217+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:37:21.360+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.113 seconds
+[2024-11-02T22:38:38.776+0000] {processor.py:186} INFO - Started process (PID=54) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:38:38.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:38:38.783+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:38:38.782+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:38:39.836+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:38:39.910+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:38:39.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:38:39.960+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:38:39.959+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:38:40.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.305 seconds
+[2024-11-02T22:39:10.705+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:10.707+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:39:10.710+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:10.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:11.580+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:11.652+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:11.652+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:39:11.689+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:11.688+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:39:11.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.024 seconds
+[2024-11-02T22:39:42.932+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:42.934+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:39:42.942+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:42.941+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:44.146+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:39:44.194+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:44.193+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:39:44.250+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:39:44.249+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:39:44.288+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.367 seconds
+[2024-11-02T22:40:15.164+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:15.175+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:40:15.188+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:15.187+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:16.893+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:17.937+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:17.937+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:40:18.342+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:18.337+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:40:18.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 3.593 seconds
+[2024-11-02T22:40:49.748+0000] {processor.py:186} INFO - Started process (PID=101) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:49.753+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:40:49.761+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:49.761+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:50.540+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:40:50.636+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:50.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:40:50.705+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:40:50.705+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:40:50.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.039 seconds
+[2024-11-02T22:41:21.472+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:21.484+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:41:21.488+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:21.488+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:22.359+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:22.503+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:22.502+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:41:22.584+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:22.584+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:41:22.657+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.240 seconds
+[2024-11-02T22:41:53.340+0000] {processor.py:186} INFO - Started process (PID=125) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:53.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:41:53.348+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:53.347+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:54.074+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:41:54.149+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:54.147+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:41:54.196+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:41:54.196+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:41:54.236+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.910 seconds
+[2024-11-02T22:42:24.552+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:24.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:42:24.561+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:24.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:25.227+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:25.282+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:25.281+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:42:25.330+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:25.330+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:42:25.376+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.837 seconds
+[2024-11-02T22:42:55.802+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:55.808+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:42:55.812+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:55.812+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:56.306+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:42:56.402+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:56.401+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:42:56.458+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:42:56.458+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:42:56.506+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.718 seconds
+[2024-11-02T22:43:26.780+0000] {processor.py:186} INFO - Started process (PID=161) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:26.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:43:26.791+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:26.790+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:27.564+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:27.725+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:27.724+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:43:27.844+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:27.844+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:43:27.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.132 seconds
+[2024-11-02T22:43:58.033+0000] {processor.py:186} INFO - Started process (PID=173) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:58.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:43:58.040+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:58.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:58.682+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:43:58.818+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:58.816+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:43:58.890+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:43:58.890+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:43:58.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.941 seconds
+[2024-11-02T22:44:29.145+0000] {processor.py:186} INFO - Started process (PID=191) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:44:29.151+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:44:29.159+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:44:29.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:44:29.894+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:44:30.184+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:44:30.183+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:44:30.320+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:44:30.320+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:44:30.498+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.378 seconds
+[2024-11-02T22:45:01.328+0000] {processor.py:186} INFO - Started process (PID=213) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:01.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:45:01.342+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:01.340+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:03.076+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:03.269+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:03.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:45:03.340+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:03.339+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:45:03.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.223 seconds
+[2024-11-02T22:45:34.359+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:34.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:45:34.375+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:34.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:35.403+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:45:35.496+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:35.493+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:45:35.566+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:45:35.566+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:45:35.633+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.286 seconds
+[2024-11-02T22:46:06.043+0000] {processor.py:186} INFO - Started process (PID=240) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:06.063+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:46:06.072+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:06.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:07.398+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:07.451+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:07.450+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:46:07.491+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:07.491+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:46:07.534+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.499 seconds
+[2024-11-02T22:46:38.032+0000] {processor.py:186} INFO - Started process (PID=252) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:38.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:46:38.068+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:38.067+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:39.194+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:46:39.239+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:39.238+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:46:39.303+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:46:39.300+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:46:39.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.322 seconds
+[2024-11-02T22:47:09.796+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:09.808+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:47:09.817+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:09.816+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:10.926+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:11.061+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:11.059+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:47:11.200+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:11.199+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:47:11.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.502 seconds
+[2024-11-02T22:47:41.801+0000] {processor.py:186} INFO - Started process (PID=280) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:41.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:47:41.835+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:41.835+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:43.156+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:47:43.402+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:43.401+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:47:43.554+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:47:43.545+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:47:43.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.851 seconds
+[2024-11-02T22:48:14.071+0000] {processor.py:186} INFO - Started process (PID=291) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:14.116+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:48:14.121+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:14.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:15.472+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:15.650+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:15.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:48:15.835+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:15.825+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:48:16.012+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.992 seconds
+[2024-11-02T22:48:46.874+0000] {processor.py:186} INFO - Started process (PID=303) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:46.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:48:46.962+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:46.961+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:47.926+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:48:48.100+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:48.099+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:48:48.176+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:48:48.176+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:48:48.311+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.474 seconds
+[2024-11-02T22:49:19.059+0000] {processor.py:186} INFO - Started process (PID=315) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:19.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:49:19.073+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:19.070+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:20.168+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:20.309+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:20.307+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:49:20.412+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:20.411+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:49:20.495+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.485 seconds
+[2024-11-02T22:49:50.930+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:50.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:49:50.947+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:50.946+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:51.955+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:49:52.099+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:52.098+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:49:52.193+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:49:52.193+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:49:52.317+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.408 seconds
+[2024-11-02T22:50:22.862+0000] {processor.py:186} INFO - Started process (PID=339) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:22.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:50:22.875+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:22.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:23.943+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:24.057+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:24.056+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:50:24.166+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:24.165+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:50:24.294+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.441 seconds
+[2024-11-02T22:50:54.579+0000] {processor.py:186} INFO - Started process (PID=350) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:54.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:50:54.589+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:54.588+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:55.528+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:50:55.612+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:55.610+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:50:55.736+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:50:55.736+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:50:55.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.364 seconds
+[2024-11-02T22:51:26.562+0000] {processor.py:186} INFO - Started process (PID=362) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:26.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:51:26.571+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:26.570+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:27.612+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:27.703+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:27.703+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:51:27.750+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:27.749+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:51:27.783+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.243 seconds
+[2024-11-02T22:51:58.294+0000] {processor.py:186} INFO - Started process (PID=373) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:58.297+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:51:58.301+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:58.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:58.985+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:51:59.118+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:59.111+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:51:59.322+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:51:59.321+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:51:59.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.122 seconds
+[2024-11-02T22:52:29.531+0000] {processor.py:186} INFO - Started process (PID=384) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:52:29.535+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:52:29.543+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:52:29.543+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:52:30.580+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:52:30.688+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:52:30.687+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:52:30.785+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:52:30.784+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:52:30.865+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.366 seconds
+[2024-11-02T22:53:01.563+0000] {processor.py:186} INFO - Started process (PID=398) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:01.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:53:01.571+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:01.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:02.574+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:02.773+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:02.771+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:53:02.975+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:02.975+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:53:03.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.572 seconds
+[2024-11-02T22:53:33.207+0000] {processor.py:186} INFO - Started process (PID=410) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:33.208+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:53:33.213+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:33.212+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:33.767+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:53:33.807+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:33.806+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:53:33.843+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:53:33.843+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:53:33.882+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.684 seconds
+[2024-11-02T22:54:04.771+0000] {processor.py:186} INFO - Started process (PID=422) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:04.776+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:54:04.781+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:04.781+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:05.883+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:06.110+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:06.109+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:54:06.361+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:06.342+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:54:06.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.833 seconds
+[2024-11-02T22:54:37.264+0000] {processor.py:186} INFO - Started process (PID=440) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:37.268+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:54:37.281+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:37.281+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:38.090+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:54:38.203+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:38.203+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:54:38.295+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:54:38.295+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:54:38.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.151 seconds
+[2024-11-02T22:55:09.598+0000] {processor.py:186} INFO - Started process (PID=452) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:09.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:55:09.618+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:09.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:10.629+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:10.786+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:10.785+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:55:10.873+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:10.873+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:55:10.975+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.419 seconds
+[2024-11-02T22:55:41.148+0000] {processor.py:186} INFO - Started process (PID=463) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:41.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:55:41.159+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:41.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:42.013+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:55:42.203+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:42.203+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:55:42.339+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:55:42.339+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:55:42.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.420 seconds
+[2024-11-02T22:56:13.707+0000] {processor.py:186} INFO - Started process (PID=476) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:13.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:56:13.740+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:13.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:14.889+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:15.007+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:15.005+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:56:15.153+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:15.152+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:56:15.288+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.590 seconds
+[2024-11-02T22:56:45.684+0000] {processor.py:186} INFO - Started process (PID=487) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:45.687+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:56:45.694+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:45.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:46.229+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:56:46.336+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:46.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:56:46.376+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:56:46.376+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:56:46.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.812 seconds
+[2024-11-02T22:57:16.765+0000] {processor.py:186} INFO - Started process (PID=500) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:16.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:57:16.777+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:16.776+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:17.319+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:17.390+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:17.388+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:57:17.448+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:17.448+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:57:17.490+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.737 seconds
+[2024-11-02T22:57:47.696+0000] {processor.py:186} INFO - Started process (PID=511) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:47.699+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:57:47.705+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:47.704+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:48.409+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:57:48.450+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:48.450+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:57:48.485+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:57:48.484+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:57:48.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.845 seconds
+[2024-11-02T22:58:18.937+0000] {processor.py:186} INFO - Started process (PID=523) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:18.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:58:18.954+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:18.953+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:20.095+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:20.175+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:20.174+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:58:20.261+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:20.261+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:58:20.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.504 seconds
+[2024-11-02T22:58:50.855+0000] {processor.py:186} INFO - Started process (PID=535) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:50.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:58:50.872+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:50.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:51.709+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:58:51.900+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:51.899+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:58:52.097+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:58:52.096+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:58:52.192+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.362 seconds
+[2024-11-02T22:59:22.576+0000] {processor.py:186} INFO - Started process (PID=548) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:22.582+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:59:22.594+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:22.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:23.581+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:23.654+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:23.654+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:59:23.710+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:23.710+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:59:23.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.208 seconds
+[2024-11-02T22:59:54.672+0000] {processor.py:186} INFO - Started process (PID=560) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:54.675+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T22:59:54.681+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:54.680+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:55.390+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T22:59:55.546+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:55.545+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T22:59:55.715+0000] {logging_mixin.py:190} INFO - [2024-11-02T22:59:55.715+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T22:59:55.768+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.106 seconds
+[2024-11-02T23:00:26.081+0000] {processor.py:186} INFO - Started process (PID=572) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:26.084+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:00:26.089+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:26.088+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:26.904+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:26.961+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:26.960+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:00:27.019+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:27.018+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T23:00:27.091+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.025 seconds
+[2024-11-02T23:00:57.724+0000] {processor.py:186} INFO - Started process (PID=584) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:57.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:00:57.733+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:57.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:58.415+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:00:58.575+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:58.571+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:00:58.707+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:00:58.707+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T23:00:58.771+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.079 seconds
+[2024-11-02T23:01:29.181+0000] {processor.py:186} INFO - Started process (PID=597) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:01:29.184+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:01:29.188+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:01:29.188+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:01:30.124+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:01:30.214+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:01:30.213+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:01:30.322+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:01:30.321+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-10-01 00:00:00+00:00, run_after=2024-11-01 00:00:00+00:00
+[2024-11-02T23:01:30.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.279 seconds
+[2024-11-02T23:02:01.050+0000] {processor.py:186} INFO - Started process (PID=608) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:01.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:02:01.065+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:01.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:01.979+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:02.045+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:02.044+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:02:02.097+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:02.096+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:02:02.151+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.117 seconds
+[2024-11-02T23:02:32.504+0000] {processor.py:186} INFO - Started process (PID=620) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:32.506+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:02:32.513+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:32.513+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:33.314+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:02:33.368+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:33.368+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:02:33.429+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:02:33.428+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:02:33.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.175 seconds
+[2024-11-02T23:03:04.218+0000] {processor.py:186} INFO - Started process (PID=632) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:04.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:03:04.230+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:04.229+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:05.101+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:05.151+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:05.151+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:03:05.202+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:05.201+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:03:05.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.046 seconds
+[2024-11-02T23:03:35.569+0000] {processor.py:186} INFO - Started process (PID=644) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:35.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:03:35.576+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:35.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:36.343+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:03:36.524+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:36.523+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:03:36.589+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:03:36.588+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:03:36.639+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.088 seconds
+[2024-11-02T23:04:06.823+0000] {processor.py:186} INFO - Started process (PID=656) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:06.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:04:06.829+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:06.828+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:07.909+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:07.962+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:07.962+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:04:08.019+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:08.018+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:04:08.077+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.286 seconds
+[2024-11-02T23:04:38.156+0000] {processor.py:186} INFO - Started process (PID=666) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:38.158+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:04:38.163+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:38.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:38.884+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:04:38.957+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:38.957+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:04:39.009+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:04:39.007+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:04:39.064+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.928 seconds
+[2024-11-02T23:05:09.856+0000] {processor.py:186} INFO - Started process (PID=678) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:09.865+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:05:09.871+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:09.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:10.570+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:10.663+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:10.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:05:10.702+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:10.702+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:05:10.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.892 seconds
+[2024-11-02T23:05:40.804+0000] {processor.py:186} INFO - Started process (PID=690) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:40.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:05:40.813+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:40.812+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:41.564+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:05:41.621+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:41.620+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:05:41.672+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:05:41.671+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:05:41.724+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.932 seconds
+[2024-11-02T23:06:12.237+0000] {processor.py:186} INFO - Started process (PID=707) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:12.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:06:12.246+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:12.245+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:12.999+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:13.062+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:13.061+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:06:13.108+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:13.108+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:06:13.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.935 seconds
+[2024-11-02T23:06:43.552+0000] {processor.py:186} INFO - Started process (PID=718) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:43.554+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:06:43.562+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:43.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:44.449+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:06:44.519+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:44.518+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:06:44.603+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:06:44.602+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:06:44.679+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.153 seconds
+[2024-11-02T23:07:14.863+0000] {processor.py:186} INFO - Started process (PID=729) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:14.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:07:14.874+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:14.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:15.682+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:15.746+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:15.741+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:07:15.789+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:15.788+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:07:15.862+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.017 seconds
+[2024-11-02T23:07:46.586+0000] {processor.py:186} INFO - Started process (PID=741) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:46.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:07:46.595+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:46.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:47.167+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:07:47.333+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:47.332+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:07:47.381+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:07:47.380+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:07:47.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.842 seconds
+[2024-11-02T23:08:17.798+0000] {processor.py:186} INFO - Started process (PID=753) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:17.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:08:17.812+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:17.811+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:18.487+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:18.537+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:18.535+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:08:18.582+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:18.581+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:08:18.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.828 seconds
+[2024-11-02T23:08:49.100+0000] {processor.py:186} INFO - Started process (PID=765) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:49.103+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:08:49.109+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:49.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:49.541+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:08:49.576+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:49.576+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:08:49.613+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:08:49.613+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:08:49.640+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.549 seconds
+[2024-11-02T23:09:20.561+0000] {processor.py:186} INFO - Started process (PID=778) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:20.566+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:09:20.573+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:20.572+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:21.453+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:21.613+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:21.609+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:09:21.723+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:21.722+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:09:21.810+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.260 seconds
+[2024-11-02T23:09:51.983+0000] {processor.py:186} INFO - Started process (PID=790) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:51.985+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:09:51.988+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:51.988+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:52.498+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:09:52.549+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:52.547+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:09:52.593+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:09:52.592+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:09:52.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.665 seconds
+[2024-11-02T23:10:23.245+0000] {processor.py:186} INFO - Started process (PID=802) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:23.247+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:10:23.250+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:23.250+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:23.829+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:23.966+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:23.965+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:10:24.042+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:24.038+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:10:24.103+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.869 seconds
+[2024-11-02T23:10:54.358+0000] {processor.py:186} INFO - Started process (PID=812) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:54.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:10:54.368+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:54.366+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:55.170+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:10:55.303+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:55.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:10:55.378+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:10:55.377+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:10:55.504+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.154 seconds
+[2024-11-02T23:11:25.632+0000] {processor.py:186} INFO - Started process (PID=824) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:25.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:11:25.638+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:25.638+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:26.102+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:26.181+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:26.181+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:11:26.281+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:26.280+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:11:26.365+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.744 seconds
+[2024-11-02T23:11:56.519+0000] {processor.py:186} INFO - Started process (PID=835) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:56.522+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:11:56.526+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:56.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:57.088+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:11:57.152+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:57.151+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:11:57.231+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:11:57.231+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:11:57.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.801 seconds
+[2024-11-02T23:12:27.600+0000] {processor.py:186} INFO - Started process (PID=847) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:12:27.603+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:12:27.608+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:12:27.607+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:12:28.640+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:12:28.805+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:12:28.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:12:28.927+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:12:28.927+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:12:29.384+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.805 seconds
+[2024-11-02T23:12:59.971+0000] {processor.py:186} INFO - Started process (PID=859) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:12:59.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:12:59.978+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:12:59.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:13:00.718+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:13:00.985+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:13:00.982+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:13:01.058+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:13:01.057+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:13:01.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.252 seconds
+[2024-11-02T23:13:31.808+0000] {processor.py:186} INFO - Started process (PID=871) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:13:31.811+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:13:31.819+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:13:31.818+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:13:32.353+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:13:32.394+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:13:32.393+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:13:32.455+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:13:32.452+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:13:32.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.693 seconds
+[2024-11-02T23:14:02.699+0000] {processor.py:186} INFO - Started process (PID=883) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:02.702+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:14:02.708+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:02.708+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:03.675+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:03.790+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:03.789+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:14:03.898+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:03.898+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:14:04.312+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.630 seconds
+[2024-11-02T23:14:34.532+0000] {processor.py:186} INFO - Started process (PID=895) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:34.539+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:14:34.544+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:34.543+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:35.183+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:14:35.254+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:35.252+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:14:35.317+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:14:35.315+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:14:35.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.828 seconds
+[2024-11-02T23:15:05.653+0000] {processor.py:186} INFO - Started process (PID=907) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:05.656+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:15:05.669+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:05.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:07.049+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:07.221+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:07.220+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:15:07.306+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:07.304+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:15:07.364+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.750 seconds
+[2024-11-02T23:15:38.227+0000] {processor.py:186} INFO - Started process (PID=919) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:38.229+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:15:38.234+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:38.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:38.837+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:15:38.885+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:38.884+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:15:38.913+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:15:38.913+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:15:39.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.010 seconds
+[2024-11-02T23:16:09.620+0000] {processor.py:186} INFO - Started process (PID=931) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:09.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:16:09.631+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:09.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:10.396+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:10.456+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:10.455+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:16:10.506+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:10.505+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:16:10.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.939 seconds
+[2024-11-02T23:16:41.390+0000] {processor.py:186} INFO - Started process (PID=943) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:41.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:16:41.400+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:41.400+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:42.064+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:16:42.125+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:42.124+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:16:42.171+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:16:42.170+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:16:42.229+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.855 seconds
+[2024-11-02T23:17:12.643+0000] {processor.py:186} INFO - Started process (PID=956) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:12.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:17:12.655+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:12.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:13.447+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:13.538+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:13.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:17:13.593+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:13.593+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:17:13.871+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.243 seconds
+[2024-11-02T23:17:44.021+0000] {processor.py:186} INFO - Started process (PID=968) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:44.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:17:44.036+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:44.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:44.891+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:17:45.000+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:44.999+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:17:45.364+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:17:45.364+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:17:45.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.434 seconds
+[2024-11-02T23:18:15.656+0000] {processor.py:186} INFO - Started process (PID=980) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:15.658+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:18:15.665+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:15.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:16.534+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:16.711+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:16.710+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:18:16.781+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:16.780+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:18:16.884+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.242 seconds
+[2024-11-02T23:18:47.461+0000] {processor.py:186} INFO - Started process (PID=998) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:47.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:18:47.471+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:47.470+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:48.376+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:18:48.470+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:48.469+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:18:48.508+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:18:48.507+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:18:48.777+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.337 seconds
+[2024-11-02T23:19:19.143+0000] {processor.py:186} INFO - Started process (PID=1010) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:19.147+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:19:19.155+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:19.154+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:19.897+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:20.086+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:20.085+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:19:20.417+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:20.417+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:19:20.463+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.333 seconds
+[2024-11-02T23:19:51.188+0000] {processor.py:186} INFO - Started process (PID=1022) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:51.196+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:19:51.204+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:51.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:52.005+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:19:52.109+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:52.108+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:19:52.162+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:19:52.161+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:19:52.221+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.045 seconds
+[2024-11-02T23:20:22.529+0000] {processor.py:186} INFO - Started process (PID=1034) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:22.531+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:20:22.538+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:22.536+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:23.499+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:23.580+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:23.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:20:23.640+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:23.639+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:20:23.986+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.488 seconds
+[2024-11-02T23:20:54.460+0000] {processor.py:186} INFO - Started process (PID=1045) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:54.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:20:54.505+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:54.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:55.659+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:20:55.737+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:55.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:20:56.089+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:20:56.089+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:20:56.184+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.733 seconds
+[2024-11-02T23:21:26.750+0000] {processor.py:186} INFO - Started process (PID=1056) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:26.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:21:26.761+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:26.760+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:27.983+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:28.044+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:28.043+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:21:28.105+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:28.105+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:21:28.150+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.411 seconds
+[2024-11-02T23:21:58.707+0000] {processor.py:186} INFO - Started process (PID=1068) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:58.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:21:58.746+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:58.745+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:59.632+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:21:59.737+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:59.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:21:59.807+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:21:59.806+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:22:00.220+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.525 seconds
+[2024-11-02T23:22:30.944+0000] {processor.py:186} INFO - Started process (PID=1080) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:22:30.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:22:30.964+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:22:30.958+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:22:31.921+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:22:31.989+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:22:31.988+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:22:32.372+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:22:32.371+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:22:32.440+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.505 seconds
+[2024-11-02T23:23:02.687+0000] {processor.py:186} INFO - Started process (PID=1094) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:02.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:23:02.719+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:02.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:04.557+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:04.596+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:04.595+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:23:04.697+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:04.696+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:23:04.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.135 seconds
+[2024-11-02T23:23:35.356+0000] {processor.py:186} INFO - Started process (PID=1111) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:35.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:23:35.366+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:35.365+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:36.734+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:23:36.780+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:36.779+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:23:36.820+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:23:36.820+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:23:36.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.593 seconds
+[2024-11-02T23:24:07.191+0000] {processor.py:186} INFO - Started process (PID=1123) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:07.249+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:24:07.335+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:07.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:08.840+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:09.589+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:09.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:24:09.779+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:09.779+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:24:09.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.789 seconds
+[2024-11-02T23:24:40.219+0000] {processor.py:186} INFO - Started process (PID=1145) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:40.230+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:24:40.244+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:40.243+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:42.269+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:24:42.680+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:42.679+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:24:42.867+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:24:42.866+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:24:43.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.971 seconds
+[2024-11-02T23:25:13.462+0000] {processor.py:186} INFO - Started process (PID=1157) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:13.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:25:13.475+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:13.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:15.296+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:15.437+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:15.435+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:25:15.564+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:15.563+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:25:15.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.247 seconds
+[2024-11-02T23:25:46.563+0000] {processor.py:186} INFO - Started process (PID=1169) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:46.600+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:25:46.607+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:46.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:47.733+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:25:47.784+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:47.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:25:47.848+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:25:47.848+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:25:47.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.329 seconds
+[2024-11-02T23:26:17.989+0000] {processor.py:186} INFO - Started process (PID=1180) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:17.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:26:17.998+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:17.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:19.010+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:19.089+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:19.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:26:19.157+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:19.157+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:26:19.209+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.235 seconds
+[2024-11-02T23:26:50.641+0000] {processor.py:186} INFO - Started process (PID=1192) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:50.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:26:50.650+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:50.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:52.203+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:26:52.273+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:52.272+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:26:52.322+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:26:52.321+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:26:52.484+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.863 seconds
+[2024-11-02T23:27:22.799+0000] {processor.py:186} INFO - Started process (PID=1210) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:22.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:27:22.812+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:22.811+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:23.827+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:23.865+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:23.865+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:27:23.894+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:23.894+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:27:23.926+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.141 seconds
+[2024-11-02T23:27:54.467+0000] {processor.py:186} INFO - Started process (PID=1223) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:54.472+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:27:54.478+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:54.477+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:55.160+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:27:55.290+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:55.289+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:27:55.353+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:27:55.352+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:27:55.436+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.980 seconds
+[2024-11-02T23:28:25.649+0000] {processor.py:186} INFO - Started process (PID=1235) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:25.653+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:28:25.660+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:25.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:26.801+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:26.906+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:26.905+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:28:26.954+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:26.954+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:28:27.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.404 seconds
+[2024-11-02T23:28:57.450+0000] {processor.py:186} INFO - Started process (PID=1246) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:57.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:28:57.461+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:57.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:58.671+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:28:58.767+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:58.767+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:28:58.833+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:28:58.830+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:28:58.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.465 seconds
+[2024-11-02T23:29:29.238+0000] {processor.py:186} INFO - Started process (PID=1258) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:29:29.247+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:29:29.252+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:29:29.252+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:29:30.494+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:29:30.580+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:29:30.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:29:30.645+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:29:30.645+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:29:30.721+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.492 seconds
+[2024-11-02T23:30:00.864+0000] {processor.py:186} INFO - Started process (PID=1270) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:00.897+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:30:00.907+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:00.906+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:01.888+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:01.928+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:01.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:30:01.986+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:01.986+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:30:02.020+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.192 seconds
+[2024-11-02T23:30:32.117+0000] {processor.py:186} INFO - Started process (PID=1282) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:32.120+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:30:32.124+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:32.123+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:33.004+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:30:33.045+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:33.045+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:30:33.077+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:30:33.077+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:30:33.118+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.011 seconds
+[2024-11-02T23:31:03.793+0000] {processor.py:186} INFO - Started process (PID=1293) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:03.796+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:31:03.802+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:03.801+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:04.601+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:04.637+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:04.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:31:04.674+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:04.674+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:31:04.715+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.942 seconds
+[2024-11-02T23:31:35.465+0000] {processor.py:186} INFO - Started process (PID=1305) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:35.467+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:31:35.475+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:35.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:36.426+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:31:36.539+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:36.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:31:36.647+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:31:36.646+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:31:36.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.230 seconds
+[2024-11-02T23:32:07.138+0000] {processor.py:186} INFO - Started process (PID=1317) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:07.144+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:32:07.152+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:07.151+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:08.315+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:08.366+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:08.366+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:32:08.414+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:08.414+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:32:08.496+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.367 seconds
+[2024-11-02T23:32:39.075+0000] {processor.py:186} INFO - Started process (PID=1329) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:39.078+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:32:39.086+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:39.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:40.531+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:32:40.673+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:40.671+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:32:40.761+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:32:40.760+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:32:40.851+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.801 seconds
+[2024-11-02T23:33:11.185+0000] {processor.py:186} INFO - Started process (PID=1341) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:11.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:33:11.198+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:11.196+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:12.071+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:12.109+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:12.109+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:33:12.140+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:12.140+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:33:12.168+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.998 seconds
+[2024-11-02T23:33:42.668+0000] {processor.py:186} INFO - Started process (PID=1353) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:42.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:33:42.683+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:42.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:43.752+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:33:43.827+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:43.826+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:33:43.871+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:33:43.871+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:33:43.922+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.272 seconds
+[2024-11-02T23:34:14.337+0000] {processor.py:186} INFO - Started process (PID=1365) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:14.339+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:34:14.344+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:14.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:15.116+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:15.149+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:15.149+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:34:15.178+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:15.178+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:34:15.211+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.885 seconds
+[2024-11-02T23:34:45.302+0000] {processor.py:186} INFO - Started process (PID=1377) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:45.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:34:45.309+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:45.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:46.417+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:34:46.497+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:46.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:34:46.552+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:34:46.552+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:34:46.614+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.327 seconds
+[2024-11-02T23:35:16.859+0000] {processor.py:186} INFO - Started process (PID=1389) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:16.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:35:16.869+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:16.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:17.944+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:17.994+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:17.993+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:35:18.036+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:18.036+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:35:18.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.245 seconds
+[2024-11-02T23:35:48.191+0000] {processor.py:186} INFO - Started process (PID=1402) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:48.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:35:48.204+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:48.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:49.026+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:35:49.119+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:49.117+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:35:49.172+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:35:49.171+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:35:49.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.034 seconds
+[2024-11-02T23:36:19.793+0000] {processor.py:186} INFO - Started process (PID=1414) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:19.811+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:36:19.821+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:19.820+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:20.718+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:20.789+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:20.787+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:36:20.867+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:20.866+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:36:20.938+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.207 seconds
+[2024-11-02T23:36:51.304+0000] {processor.py:186} INFO - Started process (PID=1425) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:51.306+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:36:51.311+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:51.310+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:52.328+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:36:52.393+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:52.392+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:36:52.453+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:36:52.453+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:36:52.511+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.222 seconds
+[2024-11-02T23:37:22.808+0000] {processor.py:186} INFO - Started process (PID=1437) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:22.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:37:22.815+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:22.814+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:23.928+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:24.017+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:24.016+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:37:24.082+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:24.081+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:37:24.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.331 seconds
+[2024-11-02T23:37:55.024+0000] {processor.py:186} INFO - Started process (PID=1450) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:55.032+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:37:55.046+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:55.045+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:56.271+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:37:56.385+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:56.384+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:37:56.517+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:37:56.516+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:37:56.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.628 seconds
+[2024-11-02T23:38:26.793+0000] {processor.py:186} INFO - Started process (PID=1462) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:26.794+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:38:26.798+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:26.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:27.477+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:27.623+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:27.622+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:38:27.696+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:27.696+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:38:27.839+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.059 seconds
+[2024-11-02T23:38:57.998+0000] {processor.py:186} INFO - Started process (PID=1474) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:58.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:38:58.004+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:58.004+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:58.849+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:38:58.925+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:58.924+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:38:58.982+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:38:58.981+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:38:59.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.046 seconds
+[2024-11-02T23:39:29.854+0000] {processor.py:186} INFO - Started process (PID=1492) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:39:29.857+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:39:29.866+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:39:29.864+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:39:30.853+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:39:30.920+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:39:30.920+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:39:30.960+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:39:30.959+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:39:31.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.166 seconds
+[2024-11-02T23:40:01.634+0000] {processor.py:186} INFO - Started process (PID=1503) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:01.665+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:40:01.689+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:01.688+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:03.054+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:03.089+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:03.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:40:03.144+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:03.144+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:40:03.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.593 seconds
+[2024-11-02T23:40:32.855+0000] {processor.py:186} INFO - Started process (PID=1515) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:32.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:40:32.867+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:32.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:34.153+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:40:34.195+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:34.195+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:40:34.234+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:40:34.233+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:40:34.295+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.465 seconds
+[2024-11-02T23:41:04.573+0000] {processor.py:186} INFO - Started process (PID=1526) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:04.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:41:04.591+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:04.590+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:05.798+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:05.928+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:05.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:41:05.990+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:05.989+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:41:06.147+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.607 seconds
+[2024-11-02T23:41:36.541+0000] {processor.py:186} INFO - Started process (PID=1537) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:36.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:41:36.549+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:36.548+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:37.499+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:41:37.544+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:37.543+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:41:37.592+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:41:37.591+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:41:37.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.108 seconds
+[2024-11-02T23:42:07.772+0000] {processor.py:186} INFO - Started process (PID=1549) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:07.775+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:42:07.783+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:07.782+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:08.331+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:08.419+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:08.419+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:42:08.474+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:08.474+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:42:08.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.769 seconds
+[2024-11-02T23:42:38.713+0000] {processor.py:186} INFO - Started process (PID=1561) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:38.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:42:38.721+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:38.720+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:39.556+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:42:39.602+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:39.601+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:42:39.631+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:42:39.631+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:42:39.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.956 seconds
+[2024-11-02T23:43:09.880+0000] {processor.py:186} INFO - Started process (PID=1572) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:09.882+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:43:09.888+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:09.887+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:10.799+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:10.847+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:10.846+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:43:10.902+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:10.902+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:43:10.944+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.092 seconds
+[2024-11-02T23:43:41.964+0000] {processor.py:186} INFO - Started process (PID=1584) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:41.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:43:41.975+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:41.972+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:42.697+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:43:42.737+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:42.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:43:42.764+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:43:42.764+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:43:42.804+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.850 seconds
+[2024-11-02T23:44:12.919+0000] {processor.py:186} INFO - Started process (PID=1596) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:12.921+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:44:12.926+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:12.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:13.711+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:13.745+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:13.744+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:44:13.782+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:13.782+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:44:13.829+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 0.923 seconds
+[2024-11-02T23:44:44.474+0000] {processor.py:186} INFO - Started process (PID=1607) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:44.476+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:44:44.480+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:44.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:45.427+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:44:45.464+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:45.462+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:44:45.498+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:44:45.498+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:44:45.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.077 seconds
+[2024-11-02T23:45:16.446+0000] {processor.py:186} INFO - Started process (PID=1618) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:16.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:45:16.457+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:16.454+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:17.687+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:17.755+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:17.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:45:17.813+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:17.813+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:45:17.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.434 seconds
+[2024-11-02T23:45:48.723+0000] {processor.py:186} INFO - Started process (PID=1629) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:48.733+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:45:48.749+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:48.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:49.731+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:45:49.890+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:49.890+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:45:49.983+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:45:49.982+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:45:50.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.516 seconds
+[2024-11-02T23:46:20.528+0000] {processor.py:186} INFO - Started process (PID=1645) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:20.539+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:46:20.557+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:20.556+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:21.856+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:21.942+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:21.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:46:22.121+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:22.120+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:46:22.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.729 seconds
+[2024-11-02T23:46:53.018+0000] {processor.py:186} INFO - Started process (PID=1657) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:53.020+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:46:53.024+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:53.024+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:54.919+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:46:55.047+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:55.046+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:46:55.249+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:46:55.248+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:46:55.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.397 seconds
+[2024-11-02T23:47:26.203+0000] {processor.py:186} INFO - Started process (PID=1673) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:47:26.211+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:47:26.217+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:47:26.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:47:27.876+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:47:28.028+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:47:28.028+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:47:28.211+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:47:28.211+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:47:28.266+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 2.080 seconds
+[2024-11-02T23:47:58.413+0000] {processor.py:186} INFO - Started process (PID=1685) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:47:58.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:47:58.428+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:47:58.427+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:47:59.909+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:48:00.005+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:47:59.997+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:48:00.094+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:48:00.094+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:48:00.153+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.768 seconds
+[2024-11-02T23:48:30.984+0000] {processor.py:186} INFO - Started process (PID=1697) to work on /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:48:30.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backup_dag.py for tasks to queue
+[2024-11-02T23:48:30.992+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:48:30.991+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:48:31.953+0000] {processor.py:925} INFO - DAG(s) 'fraud_backup' retrieved from /opt/airflow/dags/backup_dag.py
+[2024-11-02T23:48:32.049+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:48:32.048+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-02T23:48:32.099+0000] {logging_mixin.py:190} INFO - [2024-11-02T23:48:32.098+0000] {dag.py:4180} INFO - Setting next_dagrun for fraud_backup to 2024-11-01 00:00:00+00:00, run_after=2024-12-01 00:00:00+00:00
+[2024-11-02T23:48:32.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backup_dag.py took 1.173 seconds

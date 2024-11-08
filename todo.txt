@@ -1,0 +1,130 @@
+1) créer un .env avec :
+
+# Airflow
+AIRFLOW_UID=50000
+AIRFLOW_USERNAME=xxxx
+AIRFLOW_PASSWORD=xxxx
+
+# Neon
+NEON_DATABASE_URL=xxxx (url de la base de donnée généré par neondb: postgresql://xxxxxxxxx
+
+# AWS
+AWS_ACCESS_KEY_ID=xxxxx
+AWS_SECRET_ACCESS_KEY=xxxx
+S3_BUCKET=fraud-detection-bucket-jedha
+
+# Email
+SMTP_SERVER=xxxx (pour gmail : smtp.gmail.com)
+SMTP_PORT=xxxx (pour gmail : 587)
+EMAIL_USER=xxxx
+EMAIL_PASSWORD=xxxx (penser à un app key sur google)
+
+2) dans le S3 :
+Créer un répertoire "fraud_detection_bucket" (S3_PREFIX dans les fichiers DAG)
+Puis dans ce répertoire :
+- créer un dossier etp et y stocker le fichier "etp.py" qui se trouve dans le répertoire models
+- créer un dossier models et y stocker le fichier "random_forest_model.pkl qui se trouve dans le répertoire models
+
+3) Se mettre dans le bon répertoire puis lancer le docker
+docker-compose build
+docker-compose up -d
+
+4) création d'une bdd neondb sur neon
+
+5) sur neondb :
+- créer une table fraud_transactions
+CREATE TABLE fraud_transactions (
+    transaction_id SERIAL PRIMARY KEY,
+        cc_num BIGINT,
+            merchant VARCHAR(255),
+                category VARCHAR(100),
+                    amt DECIMAL(10, 2),
+                        first VARCHAR(100),
+                            last VARCHAR(100),
+                                gender CHAR(1),
+                                    street VARCHAR(255),
+                                        city VARCHAR(100),
+                                            state VARCHAR(50),
+                                                zip INTEGER,
+                                                    lat DECIMAL(10, 6),
+                                                        long DECIMAL(10, 6),
+                                                            city_pop INTEGER,
+                                                                job VARCHAR(255),
+                                                                    dob DATE,
+                                                                        trans_num VARCHAR(255) UNIQUE,
+                                                                            merch_lat DECIMAL(10, 6),
+                                                                                merch_long DECIMAL(10, 6),
+                                                                                    is_fraud BOOLEAN DEFAULT TRUE,
+                                                                                        trans_date_trans_time TIMESTAMP
+                                                                                        );
+- créer une table normal_transactions
+CREATE TABLE normal_transactions (
+    transaction_id SERIAL PRIMARY KEY,
+        cc_num BIGINT,
+            merchant VARCHAR(255),
+                category VARCHAR(100),
+                    amt DECIMAL(10, 2),
+                        first VARCHAR(100),
+                            last VARCHAR(100),
+                                gender CHAR(1),
+                                    street VARCHAR(255),
+                                        city VARCHAR(100),
+                                            state VARCHAR(50),
+                                                zip INTEGER,
+                                                    lat DECIMAL(10, 6),
+                                                        long DECIMAL(10, 6),
+                                                            city_pop INTEGER,
+                                                                job VARCHAR(255),
+                                                                    dob DATE,
+                                                                        trans_num VARCHAR(255) UNIQUE,
+                                                                            merch_lat DECIMAL(10, 6),
+                                                                                merch_long DECIMAL(10, 6),
+                                                                                    is_fraud BOOLEAN DEFAULT FALSE,
+                                                                                        trans_date_trans_time TIMESTAMP
+                                                                                        );
+- créer les index :
+CREATE INDEX idx_normal_trans_date ON normal_transactions(trans_date_trans_time);
+CREATE INDEX idx_fraud_trans_date ON fraud_transactions(trans_date_trans_time);
+CREATE INDEX idx_normal_trans_num ON normal_transactions(trans_num);
+CREATE INDEX idx_fraud_trans_num ON fraud_transactions(trans_num);
+
+-créer une requêtes pour visualiser les transactions des dernières 24h :
+CREATE OR REPLACE VIEW recent_transactions AS
+SELECT 
+    transaction_id,
+        merchant,
+            category,
+                amt,
+                    city,
+                        state,
+                            is_fraud,
+                                trans_date_trans_time,
+                                    NULL as distance,
+                                        NULL as fraud_probability
+                                        FROM (
+                                            SELECT * FROM normal_transactions
+                                                UNION ALL
+                                                    SELECT * FROM fraud_transactions
+                                                    ) all_transactions
+                                                    WHERE trans_date_trans_time >= NOW() - INTERVAL '24 hours'
+                                                    ORDER BY trans_date_trans_time DESC
+
+-créer une requête pour visualiser les statistics journalières
+CREATE OR REPLACE VIEW daily_stats AS
+SELECT 
+    DATE(trans_date_trans_time) as date,
+    COUNT(*) as total_transactions,
+    COUNT(CASE WHEN is_fraud THEN 1 END) as fraud_count,
+    ROUND(AVG(amt), 2) as avg_amount,
+    ROUND(SUM(amt), 2) as total_amount,
+    ROUND(COUNT(CASE WHEN is_fraud THEN 1 END)::DECIMAL / COUNT(*) * 100, 2) as fraud_rate
+FROM (
+    SELECT * FROM normal_transactions
+    UNION ALL
+    SELECT * FROM fraud_transactions
+) all_transactions
+GROUP BY DATE(trans_date_trans_time)
+ORDER BY DATE(trans_date_trans_time) DESC;
+
+6) dans utils/common.py penser à modifier l'email du destinataire dans "def send_email"
+

@@ -1,0 +1,33 @@
+[2024-11-08T18:56:10.444+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-08T18:56:10.533+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:39:00+00:00 [queued]>
+[2024-11-08T18:56:10.551+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:39:00+00:00 [queued]>
+[2024-11-08T18:56:10.552+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-08T18:56:10.769+0000] {taskinstance.py:2888} INFO - Executing <Task(BranchPythonOperator): process_transaction> on 2024-11-08 18:39:00+00:00
+[2024-11-08T18:56:10.805+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'process_transaction', 'scheduled__2024-11-08T18:39:00+00:00', '--job-id', '339', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpjsie_127']
+[2024-11-08T18:56:10.810+0000] {standard_task_runner.py:105} INFO - Job 339: Subtask process_transaction
+[2024-11-08T18:56:10.993+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=79) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-08T18:56:11.006+0000] {standard_task_runner.py:72} INFO - Started process 89 to run task
+[2024-11-08T18:56:11.309+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.process_transaction scheduled__2024-11-08T18:39:00+00:00 [running]> on host c6af8dbaf1e5
+[2024-11-08T18:56:11.779+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='process_transaction' AIRFLOW_CTX_EXECUTION_DATE='2024-11-08T18:39:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-08T18:39:00+00:00'
+[2024-11-08T18:56:11.783+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-08T18:56:11.805+0000] {baseoperator.py:405} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-11-08T18:56:11.907+0000] {fraud_detection_dag.py:77} INFO - Données récupérées depuis XCom: {"columns":["cc_num","merchant","category","amt","first","last","gender","street","city","state","zip","lat","long","city_pop","job","dob","trans_num","merch_lat","merch_long","is_fraud","current_time"],"index":[404030],"data":[[6011542681743618,"fraud_McGlynn-Heathcote","misc_net",24.81,"Emily","Hall","F","8851 Reese Neck","Basye","VA",22810,38.8089,-78.7776,863,"Engineer, mining","1972-08-09","356080843b40624b7e755d33e0712e21",39.429159,-78.781455,0,1731092164803]]}
+[2024-11-08T18:56:11.919+0000] {fraud_detection_dag.py:85} INFO - Données JSON parsées avec succès
+[2024-11-08T18:56:11.925+0000] {fraud_detection_dag.py:89} INFO - DataFrame créé avec 1 lignes
+[2024-11-08T18:56:11.929+0000] {fraud_detection_dag.py:93} INFO - Colonnes renommées avec succès
+[2024-11-08T18:56:11.935+0000] {fraud_detection_dag.py:94} INFO - Colonnes disponibles: ['cc_num', 'merchant', 'category', 'amt', 'first', 'last', 'gender', 'street', 'city', 'state', 'zip', 'lat', 'long', 'city_pop', 'job', 'dob', 'trans_num', 'merch_lat', 'merch_long', 'is_fraud', 'trans_date_trans_time']
+[2024-11-08T18:56:11.940+0000] {fraud_detection_dag.py:98} INFO - Conversion de trans_date_trans_time en unix_time réussie
+[2024-11-08T18:56:11.957+0000] {fraud_detection_dag.py:131} ERROR - Erreur lors du traitement: [Errno 2] No such file or directory: '/tmp/fraud_detection/etl.py'
+[2024-11-08T18:56:11.958+0000] {fraud_detection_dag.py:132} ERROR - Type des transactions: <class 'str'>
+[2024-11-08T18:56:11.972+0000] {fraud_detection_dag.py:133} ERROR - Contenu des transactions: {"columns":["cc_num","merchant","category","amt","first","last","gender","street","city","state","zip","lat","long","city_pop","job","dob","trans_num","merch_lat","merch_long","is_fraud","current_time...
+[2024-11-08T18:56:11.973+0000] {python.py:240} INFO - Done. Returned value was: skip_processing
+[2024-11-08T18:56:11.978+0000] {branch.py:38} INFO - Branch into skip_processing
+[2024-11-08T18:56:11.987+0000] {skipmixin.py:230} INFO - Following branch ('skip_processing',)
+[2024-11-08T18:56:12.441+0000] {skipmixin.py:278} INFO - Skipping tasks [('notify_normal', -1), ('notify_fraud', -1)]
+[2024-11-08T18:56:13.510+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-08T18:56:13.511+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=process_transaction, run_id=scheduled__2024-11-08T18:39:00+00:00, execution_date=20241108T183900, start_date=20241108T185610, end_date=20241108T185613
+[2024-11-08T18:56:13.608+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-08T18:56:13.671+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-08T18:56:13.678+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

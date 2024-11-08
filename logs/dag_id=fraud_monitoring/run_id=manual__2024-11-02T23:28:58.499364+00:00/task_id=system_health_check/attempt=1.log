@@ -1,0 +1,23 @@
+[2024-11-02T23:29:13.813+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-02T23:29:13.868+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_monitoring.system_health_check manual__2024-11-02T23:28:58.499364+00:00 [queued]>
+[2024-11-02T23:29:13.915+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_monitoring.system_health_check manual__2024-11-02T23:28:58.499364+00:00 [queued]>
+[2024-11-02T23:29:13.917+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-02T23:29:13.954+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): system_health_check> on 2024-11-02 23:28:58.499364+00:00
+[2024-11-02T23:29:13.974+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1054) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-02T23:29:13.976+0000] {standard_task_runner.py:72} INFO - Started process 1056 to run task
+[2024-11-02T23:29:13.978+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_monitoring', 'system_health_check', 'manual__2024-11-02T23:28:58.499364+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/monitoring_dag.py', '--cfg-path', '/tmp/tmpn15ar5i7']
+[2024-11-02T23:29:13.988+0000] {standard_task_runner.py:105} INFO - Job 84: Subtask system_health_check
+[2024-11-02T23:29:14.206+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_monitoring.system_health_check manual__2024-11-02T23:28:58.499364+00:00 [running]> on host 713744f3b6c0
+[2024-11-02T23:29:14.406+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_monitoring' AIRFLOW_CTX_TASK_ID='system_health_check' AIRFLOW_CTX_EXECUTION_DATE='2024-11-02T23:28:58.499364+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-02T23:28:58.499364+00:00'
+[2024-11-02T23:29:14.408+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-02T23:29:36.317+0000] {monitoring_dag.py:40} INFO - Accès S3 vérifié pour le bucket: fraud-detection-bucket-jedha
+[2024-11-02T23:29:36.877+0000] {monitoring_dag.py:50} INFO - Préfixe etl vérifié: s3://fraud-detection-bucket-jedha/etl/
+[2024-11-02T23:29:37.434+0000] {monitoring_dag.py:50} INFO - Préfixe models vérifié: s3://fraud-detection-bucket-jedha/models/
+[2024-11-02T23:29:45.268+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-02T23:29:45.322+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-02T23:29:45.323+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_monitoring, task_id=system_health_check, run_id=manual__2024-11-02T23:28:58.499364+00:00, execution_date=20241102T232858, start_date=20241102T232913, end_date=20241102T232945
+[2024-11-02T23:29:45.481+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-02T23:29:45.580+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-02T23:29:45.584+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

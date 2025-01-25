@@ -15,3 +15,4 @@ USER airflow
 # Installation des dépendances Python
 COPY --chown=airflow:root requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+

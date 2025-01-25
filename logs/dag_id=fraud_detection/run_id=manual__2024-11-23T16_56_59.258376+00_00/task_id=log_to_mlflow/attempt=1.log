@@ -1,0 +1,173 @@
+[2024-11-23T16:58:49.499+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-23T16:58:49.589+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.log_to_mlflow manual__2024-11-23T16:56:59.258376+00:00 [queued]>
+[2024-11-23T16:58:49.681+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.log_to_mlflow manual__2024-11-23T16:56:59.258376+00:00 [queued]>
+[2024-11-23T16:58:49.686+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-23T16:58:49.807+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): log_to_mlflow> on 2024-11-23 16:56:59.258376+00:00
+[2024-11-23T16:58:49.825+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=661) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-23T16:58:49.828+0000] {standard_task_runner.py:72} INFO - Started process 673 to run task
+[2024-11-23T16:58:49.830+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'log_to_mlflow', 'manual__2024-11-23T16:56:59.258376+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpoyib2ykl']
+[2024-11-23T16:58:49.838+0000] {standard_task_runner.py:105} INFO - Job 70: Subtask log_to_mlflow
+[2024-11-23T16:58:50.108+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.log_to_mlflow manual__2024-11-23T16:56:59.258376+00:00 [running]> on host 345e92ff26bf
+[2024-11-23T16:58:50.482+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='log_to_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T16:56:59.258376+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-23T16:56:59.258376+00:00'
+[2024-11-23T16:58:50.484+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-23T16:58:51.260+0000] {logging_mixin.py:190} WARNING - 2024/11/23 16:58:51 INFO mlflow.tracking.fluent: Experiment with name 'fraud_detection_pipeline' does not exist. Creating a new experiment.
+[2024-11-23T16:58:52.481+0000] {fraud_detection_dag.py:415} ERROR - Erreur lors du logging MLflow: RESOURCE_ALREADY_EXISTS: Experiment(name=fraud_detection_pipeline) already exists. Error: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "experiments_name_key"
+DETAIL:  Key (name)=(fraud_detection_pipeline) already exists.
+
+[SQL: INSERT INTO experiments (name, artifact_location, lifecycle_stage, creation_time, last_update_time) VALUES (%(name)s, %(artifact_location)s, %(lifecycle_stage)s, %(creation_time)s, %(last_update_time)s) RETURNING experiments.experiment_id]
+[parameters: {'name': 'fraud_detection_pipeline', 'artifact_location': '', 'lifecycle_stage': 'active', 'creation_time': 1732381131302, 'last_update_time': 1732381131302}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2024-11-23T16:58:52.483+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fraud_detection_dag.py", line 401, in log_to_mlflow
+    configure_mlflow()
+  File "/opt/airflow/dags/fraud_detection_dag.py", line 396, in configure_mlflow
+    mlflow.set_experiment("fraud_detection_pipeline")
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 151, in set_experiment
+    experiment_id = client.create_experiment(experiment_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/client.py", line 593, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 254, in create_experiment
+    return self.store.create_experiment(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 101, in create_experiment
+    response_proto = self._call_endpoint(CreateExperiment, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 60, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 220, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 152, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: RESOURCE_ALREADY_EXISTS: Experiment(name=fraud_detection_pipeline) already exists. Error: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "experiments_name_key"
+DETAIL:  Key (name)=(fraud_detection_pipeline) already exists.
+
+[SQL: INSERT INTO experiments (name, artifact_location, lifecycle_stage, creation_time, last_update_time) VALUES (%(name)s, %(artifact_location)s, %(lifecycle_stage)s, %(creation_time)s, %(last_update_time)s) RETURNING experiments.experiment_id]
+[parameters: {'name': 'fraud_detection_pipeline', 'artifact_location': '', 'lifecycle_stage': 'active', 'creation_time': 1732381131302, 'last_update_time': 1732381131302}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2024-11-23T16:58:52.559+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=fraud_detection, task_id=log_to_mlflow, run_id=manual__2024-11-23T16:56:59.258376+00:00, execution_date=20241123T165659, start_date=20241123T165849, end_date=20241123T165852
+[2024-11-23T16:58:52.724+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-23T16:58:52.740+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 70 for task log_to_mlflow (RESOURCE_ALREADY_EXISTS: Experiment(name=fraud_detection_pipeline) already exists. Error: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "experiments_name_key"
+DETAIL:  Key (name)=(fraud_detection_pipeline) already exists.
+
+[SQL: INSERT INTO experiments (name, artifact_location, lifecycle_stage, creation_time, last_update_time) VALUES (%(name)s, %(artifact_location)s, %(lifecycle_stage)s, %(creation_time)s, %(last_update_time)s) RETURNING experiments.experiment_id]
+[parameters: {'name': 'fraud_detection_pipeline', 'artifact_location': '', 'lifecycle_stage': 'active', 'creation_time': 1732381131302, 'last_update_time': 1732381131302}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj); 673)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fraud_detection_dag.py", line 401, in log_to_mlflow
+    configure_mlflow()
+  File "/opt/airflow/dags/fraud_detection_dag.py", line 396, in configure_mlflow
+    mlflow.set_experiment("fraud_detection_pipeline")
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 151, in set_experiment
+    experiment_id = client.create_experiment(experiment_name)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/client.py", line 593, in create_experiment
+    return self._tracking_client.create_experiment(name, artifact_location, tags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 254, in create_experiment
+    return self.store.create_experiment(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 101, in create_experiment
+    response_proto = self._call_endpoint(CreateExperiment, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 60, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 220, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 152, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: RESOURCE_ALREADY_EXISTS: Experiment(name=fraud_detection_pipeline) already exists. Error: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "experiments_name_key"
+DETAIL:  Key (name)=(fraud_detection_pipeline) already exists.
+
+[SQL: INSERT INTO experiments (name, artifact_location, lifecycle_stage, creation_time, last_update_time) VALUES (%(name)s, %(artifact_location)s, %(lifecycle_stage)s, %(creation_time)s, %(last_update_time)s) RETURNING experiments.experiment_id]
+[parameters: {'name': 'fraud_detection_pipeline', 'artifact_location': '', 'lifecycle_stage': 'active', 'creation_time': 1732381131302, 'last_update_time': 1732381131302}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2024-11-23T16:58:52.984+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-23T16:58:53.119+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-23T16:58:53.135+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

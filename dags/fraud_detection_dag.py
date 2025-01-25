@@ -9,6 +9,7 @@ import json
 import os
 from sqlalchemy import create_engine, text, Boolean
 from sqlalchemy.exc import SQLAlchemyError
+import mlflow
 
 # Configuration des arguments par défaut pour le DAG
 default_args = {
@@ -132,81 +133,6 @@ def process_transaction(**context):
         logger.error(f"Type des transactions: {type(raw_transactions)}")
         logger.error(f"Contenu des transactions: {str(raw_transactions)[:200]}...")
         return 'skip_processing' 
-
-# quand je serai sur que l'email s'envoie bien le remettrai ci-dessous et surpprimerai l'envoie d'email globaux
-'''def alert_fraud(**context):
-    try:
-        # Récupération des données
-        transaction = context['task_instance'].xcom_pull(task_ids='fetch_api', key='transactions')
-        probability = context['task_instance'].xcom_pull(key='fraud_probability')
-        
-        logger.info(f"Données de transaction récupérées: {transaction}")
-        logger.info(f"Probabilité de fraude: {probability}")
-        
-        # Vérification des données
-        if transaction is None:
-            logger.error("Aucune donnée de transaction trouvée dans XCom.")
-            return 'store_fraud'
-
-        if probability is None:
-            logger.error("Aucune probabilité de fraude trouvée dans XCom.")
-            return 'store_fraud'
-            
-        # Parser le JSON si nécessaire
-        if isinstance(transaction, str):
-            transaction = json.loads(transaction)
-            
-        # Convertir en DataFrame pour faciliter l'accès aux données
-        df = pd.DataFrame(transaction['data'], columns=transaction['columns']).iloc[0]
-        
-        # Formatage du montant avec 2 décimales
-        amount = "{:.2f}".format(float(df['amt']))
-        
-        # Formatage de la date
-        transaction_date = pd.to_datetime(df['current_time'], unit='ms').strftime('%Y-%m-%d %H:%M:%S')
-        
-        body = f"""
-        🚨 ALERTE: Transaction frauduleuse détectée!
-        
-        Probabilité de fraude: {probability:.2%}
-        
-        Détails de la transaction:
-        --------------------------
-        ID Transaction: {df['trans_num']}
-        Montant: {amount}€
-        Date/Heure: {transaction_date}
-        
-        Informations sur le marchand:
-        ----------------------------
-        Nom: {df['merchant']}
-        Ville: {df['city']}
-        État: {df['state']}
-        
-        Informations sur le client:
-        --------------------------
-        Nom: {df['first']} {df['last']}
-        Ville: {df['city']}
-        
-        Cette alerte a été générée automatiquement par le système de détection de fraude.
-        """
-        
-        logger.info("Tentative d'envoi d'email d'alerte...")
-        logger.info(f"Contenu de l'email:\n{body}")
-        
-        # Envoi de l'email avec gestion des destinataires
-        recipients = os.environ.get('ALERT_EMAIL', 'default@email.com').split(',')
-        send_email(
-            subject="🚨 ALERTE FRAUDE", 
-            body=body,
-            to=recipients
-        )
-        
-        logger.info("Email d'alerte envoyé avec succès")
-        return 'store_fraud'
-        
-    except Exception as e:
-        logger.error(f"Erreur lors de l'envoi de l'alerte: {str(e)}")
-        return 'store_fraud'  # On continue vers le stockage même en cas d'erreur d'envoi'''
 
 def send_transaction_email(**context):
     try:
@@ -389,6 +315,78 @@ def store_fraud(**context):
     context['task_instance'].xcom_push(key='is_fraud', value=True)
     return store_transaction(**context)
 
+def configure_mlflow():
+    """Configure MLflow et force l'utilisation d'une run unique."""
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "http://mlflow:5000"))
+    experiment_name = "fraud_detection_pipeline"
+
+    # Vérifie si l'expérience existe déjà
+    client = mlflow.tracking.MlflowClient()
+    experiment = client.get_experiment_by_name(experiment_name)
+
+    if experiment is None:
+        # Crée l'expérience si elle n'existe pas
+        mlflow.create_experiment(name=experiment_name)
+    mlflow.set_experiment(experiment_name)
+
+def log_to_mlflow(**context):
+    """Log les résultats dans MLflow, en écrasant les artefacts précédents."""
+    try:
+        configure_mlflow()
+        client = mlflow.tracking.MlflowClient()
+
+        # Nom de l'expérience et du run
+        experiment_name = "fraud_detection_pipeline"
+        artifact_path = "model"
+        fixed_run_name = "fraud_detection_fixed_run"
+
+        # Vérifier ou créer l'expérience
+        experiment = client.get_experiment_by_name(experiment_name)
+        if experiment is None:
+            logger.info(f"Création de l'expérience {experiment_name}.")
+            experiment_id = client.create_experiment(experiment_name)
+        else:
+            experiment_id = experiment.experiment_id
+
+        # Supprimer les artefacts existants dans S3
+        s3_client = get_s3_client()
+        bucket_name = os.environ.get("S3_BUCKET")
+        prefix = f"mlartifacts/{artifact_path}/"
+        logger.info(f"Suppression des artefacts existants dans le bucket {bucket_name} au préfixe {prefix}...")
+        
+        objects_to_delete = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix).get('Contents', [])
+        if objects_to_delete:
+            delete_request = {
+                'Objects': [{'Key': obj['Key']} for obj in objects_to_delete],
+                'Quiet': True
+            }
+            s3_client.delete_objects(Bucket=bucket_name, Delete=delete_request)
+            logger.info("Artefacts existants supprimés avec succès.")
+        else:
+            logger.info("Aucun artefact à supprimer.")
+
+        # Créer un nouveau run
+        logger.info(f"Création d'un nouveau run avec le nom {fixed_run_name}.")
+        with mlflow.start_run(experiment_id=experiment_id, run_name=fixed_run_name):
+            # Récupérer les données de contexte
+            is_fraud = context['task_instance'].xcom_pull(key='is_fraud')
+            fraud_probability = context['task_instance'].xcom_pull(key='fraud_probability')
+
+            # Enregistrer les métriques et paramètres
+            mlflow.log_param("model_version", "RandomForest")
+            mlflow.log_metric("fraud_probability", fraud_probability)
+            mlflow.log_metric("is_fraud", int(is_fraud))
+
+            # Enregistrer les artefacts
+            mlflow.log_artifact("/tmp/fraud_detection/model.pkl", artifact_path="model")
+            mlflow.log_artifact("/tmp/fraud_detection/etl.py", artifact_path="etl")
+
+        logger.info("Run MLflow créé et logué avec succès.")
+
+    except Exception as e:
+        logger.error(f"Erreur lors du logging dans MLflow : {str(e)}")
+        raise
+
 with DAG(
     'fraud_detection',
     default_args=default_args,
@@ -448,54 +446,24 @@ with DAG(
         python_callable=lambda: logger.info("Pas de données")
     )
 
+    log_metrics = PythonOperator(
+    task_id='log_to_mlflow',
+    python_callable=log_to_mlflow,
+    provide_context=True,
+    trigger_rule='none_failed_min_one_success'  # Exécution si une tâche réussit
+)
+
+
+    # Définition des dépendances
+    load_deps >> fetch_api >> process >> [notify_normal, notify_fraud, skip]
+    notify_normal >> store_normal >> log_metrics
+    notify_fraud >> store_fraud >> log_metrics
+
     # Définition des dépendances
     load_deps >> fetch_api >> process >> [notify_normal, notify_fraud, skip]
     notify_normal >> store_normal
     notify_fraud >> store_fraud
 
-
-    # quand je serais sur que le code fonctionne je supprimerai au dessus et je mettrai le code ci dessous
-    '''load_deps = PythonOperator(
-        task_id='load_dependencies',
-        python_callable=load_dependencies,
-    )
-
-    fetch_api = PythonOperator(
-        task_id='fetch_api',
-        python_callable=fetch_api,
-        do_xcom_push=True,  # Assurez-vous que XCom est activé
-    )
-
-    process = BranchPythonOperator(
-        task_id='process_transaction',
-        python_callable=process_transaction,
-        provide_context=True,
-        trigger_rule='all_success',  # S'assure que toutes les tâches précédentes sont réussies
-    )
-
-    store_normal = PythonOperator(
-    task_id='store_normal',
-    python_callable=store_normal,
-    provide_context=True
-    )   
-
-    send_alert = PythonOperator(
-        task_id='send_fraud_alert',
-        python_callable=alert_fraud,
-        provide_context=True
-    )
-
-    store_fraud = PythonOperator(
-    task_id='store_fraud',
-    python_callable=store_fraud,
-    provide_context=True
-    )
-
-    skip = PythonOperator(
-        task_id='skip_processing',
-        python_callable=lambda: logger.info("Pas de données")
-    )
-
-    load_deps >> fetch_api >> process >> [store_normal, send_alert, skip]
-    send_alert >> store_fraud'''
+    # L'étape log_to_mlflow
+    [store_normal, store_fraud] >> log_metrics
 

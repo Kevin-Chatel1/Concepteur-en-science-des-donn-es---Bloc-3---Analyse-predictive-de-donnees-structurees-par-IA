@@ -1,0 +1,23 @@
+[2024-11-23T18:05:03.903+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-23T18:05:03.939+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.load_dependencies scheduled__2024-11-23T18:04:00+00:00 [queued]>
+[2024-11-23T18:05:03.956+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.load_dependencies scheduled__2024-11-23T18:04:00+00:00 [queued]>
+[2024-11-23T18:05:03.957+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-23T18:05:03.987+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_dependencies> on 2024-11-23 18:04:00+00:00
+[2024-11-23T18:05:04.000+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=4271) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-23T18:05:04.001+0000] {standard_task_runner.py:72} INFO - Started process 4278 to run task
+[2024-11-23T18:05:04.004+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'load_dependencies', 'scheduled__2024-11-23T18:04:00+00:00', '--job-id', '424', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpeyw26ki0']
+[2024-11-23T18:05:04.007+0000] {standard_task_runner.py:105} INFO - Job 424: Subtask load_dependencies
+[2024-11-23T18:05:04.094+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.load_dependencies scheduled__2024-11-23T18:04:00+00:00 [running]> on host 345e92ff26bf
+[2024-11-23T18:05:04.277+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='load_dependencies' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T18:04:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-23T18:04:00+00:00'
+[2024-11-23T18:05:04.280+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-23T18:05:04.302+0000] {fraud_detection_dag.py:27} INFO - Chargement des dépendances depuis S3...
+[2024-11-23T18:05:26.621+0000] {fraud_detection_dag.py:43} INFO - Modèle chargé avec succès
+[2024-11-23T18:05:27.351+0000] {fraud_detection_dag.py:48} INFO - ETL chargé avec succès
+[2024-11-23T18:05:27.505+0000] {python.py:240} INFO - Done. Returned value was: True
+[2024-11-23T18:05:27.624+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-23T18:05:27.629+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=load_dependencies, run_id=scheduled__2024-11-23T18:04:00+00:00, execution_date=20241123T180400, start_date=20241123T180503, end_date=20241123T180527
+[2024-11-23T18:05:27.732+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-23T18:05:27.806+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-23T18:05:27.814+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

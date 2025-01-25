@@ -1,0 +1,56 @@
+[2024-11-23T17:18:09.409+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-23T17:18:09.620+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.store_normal scheduled__2024-11-23T17:16:00+00:00 [queued]>
+[2024-11-23T17:18:09.741+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.store_normal scheduled__2024-11-23T17:16:00+00:00 [queued]>
+[2024-11-23T17:18:09.757+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-23T17:18:09.867+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): store_normal> on 2024-11-23 17:16:00+00:00
+[2024-11-23T17:18:09.898+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1945) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-23T17:18:09.902+0000] {standard_task_runner.py:72} INFO - Started process 1960 to run task
+[2024-11-23T17:18:09.900+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'store_normal', 'scheduled__2024-11-23T17:16:00+00:00', '--job-id', '195', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpg85oludy']
+[2024-11-23T17:18:09.913+0000] {standard_task_runner.py:105} INFO - Job 195: Subtask store_normal
+[2024-11-23T17:18:10.148+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.store_normal scheduled__2024-11-23T17:16:00+00:00 [running]> on host 345e92ff26bf
+[2024-11-23T17:18:10.388+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='store_normal' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T17:16:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-23T17:16:00+00:00'
+[2024-11-23T17:18:10.391+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-23T17:18:10.410+0000] {fraud_detection_dag.py:310} INFO - Tentative de connexion à Neon...
+[2024-11-23T17:18:14.418+0000] {fraud_detection_dag.py:316} INFO - Connexion à Neon réussie!
+[2024-11-23T17:18:14.694+0000] {fraud_detection_dag.py:323} INFO - Données reçues pour stockage: {"columns":["cc_num","merchant","category","amt","first","last","gender","street","city","state","zip","lat","long","city_pop","job","dob","trans_num","merch_lat","merch_long","is_fraud","current_time"],"index":[510280],"data":[[4514242065619750,"fraud_Connelly PLC","food_dining",73.45,"Janet","Carpenter","F","9870 Collins Flat","Laramie","WY",82072,41.4247,-105.4781,35371,"Pilot, airline","1988-09-02","b5debb9c43ff57d865a8c680916dc391",42.046256,-105.975925,0,1732382266017]]}
+[2024-11-23T17:18:14.696+0000] {fraud_detection_dag.py:332} INFO - JSON parsé avec succès
+[2024-11-23T17:18:14.717+0000] {fraud_detection_dag.py:336} INFO - DataFrame créé avec 1 lignes
+[2024-11-23T17:18:14.720+0000] {fraud_detection_dag.py:341} INFO - Colonne current_time renommée en trans_date_trans_time
+[2024-11-23T17:18:14.727+0000] {fraud_detection_dag.py:345} INFO - Conversion du timestamp réussie
+[2024-11-23T17:18:14.753+0000] {fraud_detection_dag.py:349} INFO - Indicateur de fraude récupéré: False
+[2024-11-23T17:18:14.756+0000] {fraud_detection_dag.py:353} INFO - Colonne is_fraud mise à jour avec la valeur: False
+[2024-11-23T17:18:14.758+0000] {fraud_detection_dag.py:357} INFO - Conversion de is_fraud en boolean réussie
+[2024-11-23T17:18:14.759+0000] {fraud_detection_dag.py:360} INFO - Colonnes finales avant stockage: ['cc_num', 'merchant', 'category', 'amt', 'first', 'last', 'gender', 'street', 'city', 'state', 'zip', 'lat', 'long', 'city_pop', 'job', 'dob', 'trans_num', 'merch_lat', 'merch_long', 'is_fraud', 'trans_date_trans_time']
+[2024-11-23T17:18:14.761+0000] {fraud_detection_dag.py:361} INFO - Types des données: 
+cc_num                            int64
+merchant                         object
+category                         object
+amt                             float64
+first                            object
+last                             object
+gender                           object
+street                           object
+city                             object
+state                            object
+zip                               int64
+lat                             float64
+long                            float64
+city_pop                          int64
+job                              object
+dob                              object
+trans_num                        object
+merch_lat                       float64
+merch_long                      float64
+is_fraud                           bool
+trans_date_trans_time    datetime64[ns]
+dtype: object
+[2024-11-23T17:18:14.762+0000] {fraud_detection_dag.py:365} INFO - Stockage dans la table: normal_transactions
+[2024-11-23T17:18:15.810+0000] {fraud_detection_dag.py:370} INFO - Données stockées avec succès dans la table normal_transactions
+[2024-11-23T17:18:15.811+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-23T17:18:15.862+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-23T17:18:15.878+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=store_normal, run_id=scheduled__2024-11-23T17:16:00+00:00, execution_date=20241123T171600, start_date=20241123T171809, end_date=20241123T171815
+[2024-11-23T17:18:15.997+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-23T17:18:16.079+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-23T17:18:16.085+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

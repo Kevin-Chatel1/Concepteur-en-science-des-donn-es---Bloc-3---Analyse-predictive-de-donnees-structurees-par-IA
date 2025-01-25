@@ -1,0 +1,41 @@
+[2024-11-24T15:18:23.656+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-24T15:18:23.688+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.log_to_mlflow scheduled__2024-11-24T15:16:00+00:00 [queued]>
+[2024-11-24T15:18:23.713+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.log_to_mlflow scheduled__2024-11-24T15:16:00+00:00 [queued]>
+[2024-11-24T15:18:23.714+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-24T15:18:23.834+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): log_to_mlflow> on 2024-11-24 15:16:00+00:00
+[2024-11-24T15:18:23.861+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=894) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-24T15:18:23.864+0000] {standard_task_runner.py:72} INFO - Started process 900 to run task
+[2024-11-24T15:18:23.868+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'log_to_mlflow', 'scheduled__2024-11-24T15:16:00+00:00', '--job-id', '592', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpmkhao1vb']
+[2024-11-24T15:18:23.876+0000] {standard_task_runner.py:105} INFO - Job 592: Subtask log_to_mlflow
+[2024-11-24T15:18:24.015+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.log_to_mlflow scheduled__2024-11-24T15:16:00+00:00 [running]> on host 345e92ff26bf
+[2024-11-24T15:18:24.261+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='log_to_mlflow' AIRFLOW_CTX_EXECUTION_DATE='2024-11-24T15:16:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-24T15:16:00+00:00'
+[2024-11-24T15:18:24.265+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-24T15:18:30.757+0000] {fraud_detection_dag.py:355} INFO - Suppression des artefacts existants dans le bucket fraud-detection-bucket-jedha au préfixe mlartifacts/model/...
+[2024-11-24T15:18:33.315+0000] {fraud_detection_dag.py:366} INFO - Aucun artefact à supprimer.
+[2024-11-24T15:18:33.319+0000] {fraud_detection_dag.py:369} INFO - Création d'un nouveau run avec le nom fraud_detection_fixed_run.
+[2024-11-24T15:18:33.645+0000] {logging_mixin.py:190} WARNING - 2024/11/24 15:18:33 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2024-11-24T15:18:41.938+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-11-24T15:19:04.450+0000] {fraud_detection_dag.py:384} INFO - Run MLflow créé et logué avec succès.
+[2024-11-24T15:19:04.469+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-24T15:19:04.534+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-24T15:19:04.535+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=log_to_mlflow, run_id=scheduled__2024-11-24T15:16:00+00:00, execution_date=20241124T151600, start_date=20241124T151823, end_date=20241124T151904
+[2024-11-24T15:19:04.962+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-24T15:19:05.149+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-24T15:19:05.170+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

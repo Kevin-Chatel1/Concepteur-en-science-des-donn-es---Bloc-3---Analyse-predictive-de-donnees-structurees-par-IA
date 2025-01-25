@@ -1,0 +1,34 @@
+[2024-12-10T19:46:19.204+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-10T19:46:19.316+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: neon_backup_v2.perform_neon_backup scheduled__2024-11-01T00:00:00+00:00 [queued]>
+[2024-12-10T19:46:19.359+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: neon_backup_v2.perform_neon_backup scheduled__2024-11-01T00:00:00+00:00 [queued]>
+[2024-12-10T19:46:19.360+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-12-10T19:46:19.408+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): perform_neon_backup> on 2024-11-01 00:00:00+00:00
+[2024-12-10T19:46:19.430+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'neon_backup_v2', 'perform_neon_backup', 'scheduled__2024-11-01T00:00:00+00:00', '--job-id', '632', '--raw', '--subdir', 'DAGS_FOLDER/backup_dag.py', '--cfg-path', '/tmp/tmp8g24nnhx']
+[2024-12-10T19:46:19.437+0000] {standard_task_runner.py:105} INFO - Job 632: Subtask perform_neon_backup
+[2024-12-10T19:46:19.450+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=65) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-12-10T19:46:19.451+0000] {standard_task_runner.py:72} INFO - Started process 67 to run task
+[2024-12-10T19:46:19.760+0000] {task_command.py:467} INFO - Running <TaskInstance: neon_backup_v2.perform_neon_backup scheduled__2024-11-01T00:00:00+00:00 [running]> on host 345e92ff26bf
+[2024-12-10T19:46:20.290+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='neon_backup_v2' AIRFLOW_CTX_TASK_ID='perform_neon_backup' AIRFLOW_CTX_EXECUTION_DATE='2024-11-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-01T00:00:00+00:00'
+[2024-12-10T19:46:20.293+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-10T19:46:20.371+0000] {backup_dag.py:12} INFO - Démarrage du backup Neon...
+[2024-12-10T19:46:25.969+0000] {backup_dag.py:31} INFO - Nombre de lignes dans fraud_transactions: 5
+[2024-12-10T19:46:26.571+0000] {backup_dag.py:31} INFO - Nombre de lignes dans normal_transactions: 155
+[2024-12-10T19:46:26.687+0000] {backup_dag.py:40} INFO - Sauvegarde de fraud_transactions (5 lignes)...
+[2024-12-10T19:46:28.262+0000] {backup_dag.py:52} INFO - Fichier créé: /opt/***/backups/fraud_transactions_202412.csv (0.00 MB)
+[2024-12-10T19:46:28.268+0000] {backup_dag.py:40} INFO - Sauvegarde de normal_transactions (155 lignes)...
+[2024-12-10T19:46:29.002+0000] {backup_dag.py:52} INFO - Fichier créé: /opt/***/backups/normal_transactions_202412.csv (0.04 MB)
+[2024-12-10T19:46:31.644+0000] {backup_dag.py:71} INFO - Upload vers S3: backups/202412/fraud_transactions_202412.csv
+[2024-12-10T19:46:35.894+0000] {backup_dag.py:77} INFO - Upload vérifié pour backups/202412/fraud_transactions_202412.csv
+[2024-12-10T19:46:35.894+0000] {backup_dag.py:85} INFO - Fichier local supprimé: /opt/***/backups/fraud_transactions_202412.csv
+[2024-12-10T19:46:35.895+0000] {backup_dag.py:71} INFO - Upload vers S3: backups/202412/normal_transactions_202412.csv
+[2024-12-10T19:46:36.814+0000] {backup_dag.py:77} INFO - Upload vérifié pour backups/202412/normal_transactions_202412.csv
+[2024-12-10T19:46:36.815+0000] {backup_dag.py:85} INFO - Fichier local supprimé: /opt/***/backups/normal_transactions_202412.csv
+[2024-12-10T19:46:38.535+0000] {backup_dag.py:111} INFO - Backup Neon terminé avec succès
+[2024-12-10T19:46:38.538+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-12-10T19:46:38.619+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-10T19:46:38.620+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=neon_backup_v2, task_id=perform_neon_backup, run_id=scheduled__2024-11-01T00:00:00+00:00, execution_date=20241101T000000, start_date=20241210T194619, end_date=20241210T194638
+[2024-12-10T19:46:38.711+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-10T19:46:38.755+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-10T19:46:38.761+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,51 @@
+[2024-11-23T17:52:03.136+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-23T17:52:03.179+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection.notify_fraud scheduled__2024-11-23T17:50:00+00:00 [queued]>
+[2024-11-23T17:52:03.204+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection.notify_fraud scheduled__2024-11-23T17:50:00+00:00 [queued]>
+[2024-11-23T17:52:03.204+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-23T17:52:03.238+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): notify_fraud> on 2024-11-23 17:50:00+00:00
+[2024-11-23T17:52:03.253+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=3382) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-23T17:52:03.256+0000] {standard_task_runner.py:72} INFO - Started process 3394 to run task
+[2024-11-23T17:52:03.257+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection', 'notify_fraud', 'scheduled__2024-11-23T17:50:00+00:00', '--job-id', '326', '--raw', '--subdir', 'DAGS_FOLDER/fraud_detection_dag.py', '--cfg-path', '/tmp/tmpir0b4cg3']
+[2024-11-23T17:52:03.261+0000] {standard_task_runner.py:105} INFO - Job 326: Subtask notify_fraud
+[2024-11-23T17:52:03.375+0000] {task_command.py:467} INFO - Running <TaskInstance: fraud_detection.notify_fraud scheduled__2024-11-23T17:50:00+00:00 [running]> on host 345e92ff26bf
+[2024-11-23T17:52:03.642+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='fraud_team' AIRFLOW_CTX_DAG_ID='fraud_detection' AIRFLOW_CTX_TASK_ID='notify_fraud' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T17:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-23T17:50:00+00:00'
+[2024-11-23T17:52:03.643+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-23T17:52:03.780+0000] {fraud_detection_dag.py:144} INFO - Données de transaction récupérées: {"columns":["cc_num","merchant","category","amt","first","last","gender","street","city","state","zip","lat","long","city_pop","job","dob","trans_num","merch_lat","merch_long","is_fraud","current_time"],"index":[49640],"data":[[4311368326621416041,"fraud_Kihn-Fritsch","food_dining",304.93,"Phillip","Delacruz","M","26678 Lisa Locks Apt. 904","Iliff","CO",80736,40.7692,-103.0968,648,"Community arts worker","1969-09-21","6d26786ed9dab9294b187b072f021e52",39.814079,-102.1807,0,1732384309558]]}
+[2024-11-23T17:52:03.782+0000] {fraud_detection_dag.py:145} INFO - Probabilité de fraude: 0.5157234371474249
+[2024-11-23T17:52:03.784+0000] {fraud_detection_dag.py:146} INFO - Est une fraude: True
+[2024-11-23T17:52:03.791+0000] {fraud_detection_dag.py:206} INFO - Tentative d'envoi d'email frauduleuse...
+[2024-11-23T17:52:03.793+0000] {fraud_detection_dag.py:207} INFO - Contenu de l'email:
+
+        🚨 Transaction FRAUDULEUSE détectée!
+        
+        Statut: Rouge
+        Probabilité de fraude: 51.57%
+        
+        Détails de la transaction:
+        --------------------------
+        ID Transaction: 6d26786ed9dab9294b187b072f021e52
+        Montant: 304.93€
+        Date/Heure: 2024-11-23 17:51:49
+        
+        Informations sur le marchand:
+        ----------------------------
+        Nom: fraud_Kihn-Fritsch
+        Ville: Iliff
+        État: CO
+        
+        Informations sur le client:
+        --------------------------
+        Nom: Phillip Delacruz
+        Ville: Iliff
+        
+        Cette notification a été générée automatiquement par le système de détection de fraude.
+        
+[2024-11-23T17:52:06.189+0000] {fraud_detection_dag.py:217} INFO - Email envoyé avec succès
+[2024-11-23T17:52:06.190+0000] {python.py:240} INFO - Done. Returned value was: store_fraud
+[2024-11-23T17:52:06.249+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-23T17:52:06.251+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=fraud_detection, task_id=notify_fraud, run_id=scheduled__2024-11-23T17:50:00+00:00, execution_date=20241123T175000, start_date=20241123T175203, end_date=20241123T175206
+[2024-11-23T17:52:06.285+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-23T17:52:06.326+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-23T17:52:06.330+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
